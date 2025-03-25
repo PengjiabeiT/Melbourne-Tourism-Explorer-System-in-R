@@ -1,0 +1,193 @@
+/* Custom CSS for Melbourne Tourism Explorer */
+:root {
+    --unimelb-blue: #094183; 
+    --sidebar-bg: #2c3e50; 
+    --sidebar-text: #ffffff; 
+    --content-bg: #F5F5DC; 
+    --hover-bg: #34495e;
+    --table-header-text: #ffffff; 
+    --table-text: #000000; 
+  }
+  
+/* Top bar style */
+  .skin-blue .main-header .logo,
+  .skin-blue .main-header .navbar {
+    background-color: var(--unimelb-blue);
+  }
+  
+/* Sidebar style */
+  .skin-blue .main-sidebar {
+    background-color: var(--sidebar-bg);
+  }
+  
+  .skin-blue .sidebar-menu > li > a {
+    color: var(--sidebar-text);
+    border-left: 3px solid transparent;
+  }
+  
+  .skin-blue .sidebar-menu > li:hover > a,
+  .skin-blue .sidebar-menu > li.active > a {
+    background-color: var(--hover-bg);
+    border-left-color: var(--unimelb-blue);
+  }
+  
+  .skin-blue .sidebar-menu > li.active > a {
+    font-weight: bold;
+  }
+  
+/* Content area style */
+  .content-wrapper, .right-side {
+    background-color: var(--content-bg);
+  }
+  
+/* Box style */
+  .box {
+    border-top: 3px solid var(--unimelb-blue);
+  }
+  
+/* Button style */
+.btn-primary {
+    background-color: var(--unimelb-blue);
+    border-color: var(--unimelb-blue);
+    color: #ffffff !important;
+    transition: all 0.3s ease; 
+}
+
+/* Button hover status */
+.btn-primary:hover {
+    background-color: #0a4d9c;
+    border-color: #0a4d9c;
+    color: #ffffff !important;
+}
+  
+/* Text color */
+  body {
+    color: #000000 !important;
+  }
+  
+/* Table style */
+.dataTables_wrapper {
+    color: var(--table-text) !important;
+}
+
+table.dataTable {
+    color: var(--table-text) !important;
+}
+
+/* Modify the header style */
+table.dataTable thead th,
+table.dataTable thead td {
+    color: var(--table-header-text) !important;
+    background-color: var(--unimelb-blue) !important;
+    font-weight: bold !important;
+    border-bottom: 2px solid var(--unimelb-blue) !important;
+}
+
+/* Table body style */
+table.dataTable tbody tr {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--table-text) !important;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* DataTables Control Style */
+.dataTables_info,
+.dataTables_paginate,
+.dataTables_length,
+.dataTables_filter {
+  color: var(--table-text) !important;
+}
+
+.paginate_button {
+  color: var(--table-text) !important;
+}
+
+.paginate_button.current,
+.paginate_button:hover {
+  color: var(--unimelb-blue) !important;
+  background: var(--table-text) !important;
+}
+
+/* Search box style */
+.dataTables_filter input {
+  color: var(--table-text) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid var(--table-text) !important;
+}
+
+/* Select the box style */
+.dataTables_length select {
+  color: var(--table-text) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid var(--table-text) !important;
+}
+
+.dataTables_length select option {
+  background-color: var(--content-bg) !important;
+}
+
+/* Make sure that the table sorting icon is also white */
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after {
+    color: var(--table-header-text) !important;
+    opacity: 0.7;
+}
+
+/* Watch head hovering effect */
+table.dataTable thead th:hover,
+table.dataTable thead td:hover {
+    background-color: #0a4d9c !important;
+}
+
+.dashboard-section {
+  background: #F8F9FA;
+  transition: all 0.3s ease;
+}
+
+.dashboard-section:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-intro {
+  position: relative;
+}
+
+.section-header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #E7E3DE;
+}
+
+.tableau-dashboard-container {
+  transition: all 0.3s ease;
+}
+
+.tableau-dashboard-container:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .tableau-dashboard-container {
+    padding: 10px;
+  }
+  
+  .section-header {
+    font-size: 1.5em !important;
+  }
+}
+
+
